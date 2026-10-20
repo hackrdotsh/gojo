@@ -54,7 +54,7 @@ NixOS users get pointed at the [Nix/NixOS](#nixnixos) instructions.
 ### Windows (Scoop)
 
 ```powershell
-scoop bucket add gojo https://github.com/0xhckr/gojo
+scoop bucket add gojo https://github.com/hackrdotsh/gojo
 scoop install gojo/gojo
 ```
 
@@ -64,7 +64,7 @@ arm64 packages are available.
 ### Homebrew
 
 ```sh
-brew tap 0xhckr/gojo https://github.com/0xhckr/gojo
+brew tap hackrdotsh/gojo https://github.com/hackrdotsh/gojo
 brew install --cask gojo
 ```
 
@@ -76,7 +76,7 @@ caveat for an optional `gj` shorthand alias.
 ### Nix/NixOS
 
 ```sh
-nix run github:0xhckr/gojo      # run directly
+nix run github:hackrdotsh/gojo      # run directly
 # or, for development:
 nix develop                     # drops you into a shell with Go tooling + Codex
 go run .
@@ -238,7 +238,7 @@ that includes Codex. Nix installs Codex automatically with gojo; on other
 platforms, install Codex CLI separately and make sure `codex` is in `$PATH`.
 
 1. Run `codex login` and choose **Sign in with ChatGPT**. If you only use
-   `nix run`, enter `nix shell github:0xhckr/gojo` first to access the bundled
+   `nix run`, enter `nix shell github:hackrdotsh/gojo` first to access the bundled
    `codex` command.
 2. Set this at the top level of `~/.config/gojo/gojo.toml` (before any section
    headers), or under `[tools.gojo]` in jj's config:

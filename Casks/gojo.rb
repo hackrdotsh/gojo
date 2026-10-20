@@ -5,32 +5,32 @@ cask "gojo" do
   on_macos do
     on_intel do
       sha256 "a13b2fef2a0bb306a9b31138930cf354be1096c0b79ab1e796961a06b059b1e8"
-      url "https://github.com/0xhckr/gojo/releases/download/v#{version}/gojo_#{version}_macOS_amd64.tar.gz",
-        verified: "github.com/0xhckr/gojo/"
+      url "https://github.com/hackrdotsh/gojo/releases/download/v#{version}/gojo_#{version}_macOS_amd64.tar.gz",
+        verified: "github.com/hackrdotsh/gojo/"
     end
     on_arm do
       sha256 "7a425ceeaf00b1983433c9652214115593c9a51abf6d4ddded5c548a68ff5e37"
-      url "https://github.com/0xhckr/gojo/releases/download/v#{version}/gojo_#{version}_macOS_arm64.tar.gz",
-        verified: "github.com/0xhckr/gojo/"
+      url "https://github.com/hackrdotsh/gojo/releases/download/v#{version}/gojo_#{version}_macOS_arm64.tar.gz",
+        verified: "github.com/hackrdotsh/gojo/"
     end
   end
 
   on_linux do
     on_intel do
       sha256 "0a7ded9ae7035c730b8b192dd4b10819499c86a2603328d8a8b7d11062e5d0ea"
-      url "https://github.com/0xhckr/gojo/releases/download/v#{version}/gojo_#{version}_linux_amd64.tar.gz",
-        verified: "github.com/0xhckr/gojo/"
+      url "https://github.com/hackrdotsh/gojo/releases/download/v#{version}/gojo_#{version}_linux_amd64.tar.gz",
+        verified: "github.com/hackrdotsh/gojo/"
     end
     on_arm do
       sha256 "8108e6eb3ae216393436af922c665672f02848b9eec0cb98e4036832b0c89dc2"
-      url "https://github.com/0xhckr/gojo/releases/download/v#{version}/gojo_#{version}_linux_arm64.tar.gz",
-        verified: "github.com/0xhckr/gojo/"
+      url "https://github.com/hackrdotsh/gojo/releases/download/v#{version}/gojo_#{version}_linux_arm64.tar.gz",
+        verified: "github.com/hackrdotsh/gojo/"
     end
   end
 
   name "gojo"
   desc "Fullscreen terminal UI for jj (Jujutsu VCS)"
-  homepage "https://github.com/0xhckr/gojo"
+  homepage "https://github.com/hackrdotsh/gojo"
 
   livecheck do
     skip "Auto-generated on release."

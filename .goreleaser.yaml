@@ -54,7 +54,7 @@ nfpms:
   - id: gojo-rpm
     package_name: gojo
     vendor: 0xhckr
-    homepage: https://github.com/0xhckr/gojo
+    homepage: https://github.com/hackrdotsh/gojo
     maintainer: 0xhckr
     description: "Fullscreen terminal UI for jj (Jujutsu VCS)"
     license: MIT
@@ -80,7 +80,7 @@ nfpms:
   - id: gojo-deb
     package_name: gojo
     vendor: 0xhckr
-    homepage: https://github.com/0xhckr/gojo
+    homepage: https://github.com/hackrdotsh/gojo
     maintainer: 0xhckr
     description: "Fullscreen terminal UI for jj (Jujutsu VCS)"
     license: MIT
@@ -98,7 +98,7 @@ nfpms:
   - id: gojo-arch
     package_name: gojo
     vendor: 0xhckr
-    homepage: https://github.com/0xhckr/gojo
+    homepage: https://github.com/hackrdotsh/gojo
     maintainer: 0xhckr
     description: "Fullscreen terminal UI for jj (Jujutsu VCS)"
     license: MIT
@@ -132,7 +132,7 @@ changelog:
 
 release:
   github:
-    owner: 0xhckr
+    owner: hackrdotsh
     name: gojo
   draft: false
   prerelease: auto
@@ -142,21 +142,21 @@ release:
 # Casks/gojo.rb. Because the cask lives in the repo we're releasing
 # from, the default GITHUB_TOKEN (granted `contents: write` by the
 # release workflow) is sufficient — no separate tap repo or PAT needed.
-# Users install via: brew tap 0xhckr/gojo https://github.com/0xhckr/gojo
+# Users install via: brew tap hackrdotsh/gojo https://github.com/hackrdotsh/gojo
 #                  brew install --cask gojo
 homebrew_casks:
   - name: gojo
     repository:
-      owner: 0xhckr
+      owner: hackrdotsh
       name: gojo
       branch: main
-    homepage: https://github.com/0xhckr/gojo
+    homepage: https://github.com/hackrdotsh/gojo
     description: "Fullscreen terminal UI for jj (Jujutsu VCS)"
     skip_upload: auto
     binaries:
       - gojo
     url:
-      verified: github.com/0xhckr/gojo/
+      verified: github.com/hackrdotsh/gojo/
     dependencies:
       - formula: jj
     # Binary is not signed/notarized — strip quarantine on install.
@@ -174,15 +174,15 @@ homebrew_casks:
 
 # Generate a Scoop manifest at the repository root so this repo also acts as
 # a bucket. Windows archives use zip, as required by GoReleaser's Scoop pipe.
-# Users install via: scoop bucket add gojo https://github.com/0xhckr/gojo
+# Users install via: scoop bucket add gojo https://github.com/hackrdotsh/gojo
 #                    scoop install gojo/gojo
 scoops:
   - name: gojo
     repository:
-      owner: 0xhckr
+      owner: hackrdotsh
       name: gojo
       branch: main
-    homepage: https://github.com/0xhckr/gojo
+    homepage: https://github.com/hackrdotsh/gojo
     description: "Fullscreen terminal UI for jj (Jujutsu VCS)"
     license: MIT
     skip_upload: auto

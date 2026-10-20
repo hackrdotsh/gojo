@@ -6,11 +6,11 @@ publish a GitHub Release, and auto-update the Homebrew cask and Scoop manifest.
 The cask and Scoop manifest live in **this same repo** at `Casks/gojo.rb` and
 `gojo.json` — there are no separate package repositories or PATs to manage.
 The default `GITHUB_TOKEN` (granted `contents: write` by the release workflow)
-is enough to commit both back into `0xhckr/gojo`.
+is enough to commit both back into `hackrdotsh/gojo`.
 
 ## Prerequisites
 
-- The repo `0xhckr/gojo` must be **public** (Homebrew can't install from
+- The repo `hackrdotsh/gojo` must be **public** (Homebrew can't install from
   private repos without per-user credentials).
 - Actions must be enabled (they are by default).
 
@@ -56,7 +56,7 @@ drift silently. The `release` workflow then:
 **Windows:**
 
 ```powershell
-scoop bucket add gojo https://github.com/0xhckr/gojo
+scoop bucket add gojo https://github.com/hackrdotsh/gojo
 scoop install gojo/gojo
 ```
 
@@ -65,7 +65,7 @@ The Scoop manifest installs `jj` as a runtime dependency.
 **macOS:**
 
 ```sh
-brew tap 0xhckr/gojo https://github.com/0xhckr/gojo
+brew tap hackrdotsh/gojo https://github.com/hackrdotsh/gojo
 brew install --cask gojo
 ```
 
